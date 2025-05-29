@@ -8,6 +8,6 @@ export const fetchHello = async () => {
   return res.data;
 };
 export const fetchData = async (endpoint) => {
-  const res = await axios.get(`https://chat-app-pro1-7y2z.onrender.com/api/${endpoint}`);
+  const res = await axios.get(`${API_BASE_URL}/api/${endpoint}`);
   return res.data;
 };
