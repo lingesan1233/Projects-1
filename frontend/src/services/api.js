@@ -46,7 +46,6 @@ export const resetPasswordDirect = async (email, newPassword) => {
   const res = await axios.post(`${API_BASE_URL}/api/auth/reset-password`, { email, newPassword });
   return res.data;
 };
-axios.create({
-  baseURL: "https://earnest-sunburst-3aea41.netlify.app/api"
-})
+axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/auth/signup`, data)
+
 // ===== USER API CALLS =====
